@@ -1,6 +1,6 @@
 %define name nettee
 %define version 0.1.7
-%define release 1mdk
+%define release %mkrel 1
 
 Summary: Nettee is a network "tee" program
 Name: %{name}
