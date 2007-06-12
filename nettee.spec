@@ -1,6 +1,6 @@
 %define name nettee
 %define version 0.1.7
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary: Nettee is a network "tee" program
 Name: %{name}
@@ -8,7 +8,7 @@ Version: %{version}
 Release: %{release}
 Source0: %{name}.tar.bz2
 License: GPL
-Group: System/Deploiement
+Group: Networking/Other
 Url: http://saf.bio.caltech.edu/nettee.html
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
