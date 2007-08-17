@@ -39,5 +39,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %doc nettee_man.html
 %{_bindir}/%{name}
-%{_mandir}/man1/%name.1.bz2
+%{_mandir}/man1/%name.*
 
