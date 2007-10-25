@@ -1,6 +1,6 @@
 %define name nettee
-%define version 0.1.7
-%define release %mkrel 2
+%define version 0.1.8
+%define release %mkrel 1
 
 Summary: Nettee is a network "tee" program
 Name: %{name}
@@ -23,7 +23,7 @@ large database files.
 %setup -q -n %name-%version
 
 %build
-gcc -Wall -D_LARGEFILE64_SOURCE -o %name nettee.c
+gcc %{optflags} -D_LARGEFILE64_SOURCE -o %name nettee.c
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -37,7 +37,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(-,root,root)
-%doc nettee_man.html
+%doc LICENSE *.TXT *.html *.sh
 %{_bindir}/%{name}
 %{_mandir}/man1/%name.*
 
