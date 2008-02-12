@@ -10,7 +10,6 @@ Source0: %{name}.tar.bz2
 License: GPL
 Group: Networking/Other
 Url: http://saf.bio.caltech.edu/nettee.html
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 
 %description
