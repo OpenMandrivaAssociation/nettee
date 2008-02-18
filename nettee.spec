@@ -2,7 +2,7 @@
 %define version 0.1.8
 %define release %mkrel 1
 
-Summary: Nettee is a network "tee" program
+Summary: Network "tee" program
 Name: %{name}
 Version: %{version}
 Release: %{release}
