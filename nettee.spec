@@ -1,6 +1,6 @@
 %define name nettee
 %define version 0.1.8
-%define release %mkrel 4
+%define release %mkrel 5
 
 Summary: Network "tee" program
 Name: %{name}
