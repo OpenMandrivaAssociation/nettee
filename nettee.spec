@@ -1,6 +1,6 @@
 %define name nettee
 %define version 0.1.8
-%define release %mkrel 5
+%define release %mkrel 6
 
 Summary: Network "tee" program
 Name: %{name}
@@ -23,7 +23,7 @@ large database files.
 %setup -q -n %name-%version
 
 %build
-gcc %{optflags} -D_LARGEFILE64_SOURCE -o %name nettee.c
+gcc -O2 -g -pipe -Wformat -Werror=format-security -fexceptions -fstack-protector --param=ssp-buffer-size=4 -fomit-frame-pointer -fasynchronous-unwind-tables -D_LARGEFILE64_SOURCE -o nettee nettee.c
 
 %install
 rm -rf $RPM_BUILD_ROOT
