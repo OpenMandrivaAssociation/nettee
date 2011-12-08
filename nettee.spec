@@ -29,8 +29,8 @@ gcc -O2 -g -pipe -Wformat -Werror=format-security -fexceptions -fstack-protector
 rm -rf $RPM_BUILD_ROOT
 mkdir -p %{buildroot}%{_bindir}
 mkdir -p %{buildroot}%{_mandir}/man1
-install -m755 $RPM_BUILD_DIR/%name-%version/%name %{buildroot}%{_bindir}/%name
-install -m644 $RPM_BUILD_DIR/%name-%version/%name.1 %{buildroot}%{_mandir}/man1/%name.1
+install -m755 %{_builddir}/%name-%version/%name %{buildroot}%{_bindir}/%name
+install -m644 %{_builddir}/%name-%version/%name.1 %{buildroot}%{_mandir}/man1/%name.1
 
 %clean
 rm -rf $RPM_BUILD_ROOT
